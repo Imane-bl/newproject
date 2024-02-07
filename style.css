@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:16px;
+}
+:root{
+    --Softorange: hsl(35, 77%, 62%);
+    --Softred: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+--Grayishblue: hsl(233, 8%, 79%);
+--Darkgrayishblue: hsl(236, 13%, 42%);
+--Verydarkblue: hsl(240, 100%, 5%);
+}
+
+
+header{
+    display:flex;
+ 
+}
+
+ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+
+top:80px;
+   right:0px;
+}
+h1{
+    font-size: 50px;
+    max-width: 300px;
+}
+.flex{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto ;
+}
+.flex2{
+    
+    column-gap: 20px;
+    max-width: 497px;
+    position: absolute;
+    top:90%;
+}
