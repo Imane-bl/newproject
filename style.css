@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin:0;
-    padding:16px;
+    padding:0px;
 }
 :root{
     --Softorange: hsl(35, 77%, 62%);
@@ -11,34 +11,137 @@
 --Darkgrayishblue: hsl(236, 13%, 42%);
 --Verydarkblue: hsl(240, 100%, 5%);
 }
+body{
+    font-family: "Inter",sans-serif;
+}
+.container{
+    background-color: var(--Off-white);
+    max-width: 1440px; /* fix the design POUR METTRE les link en 1 ligne*/
+    height:100vh;
+    margin:auto;
+    padding:45px 190px;
 
-
-header{
-    display:flex;
- 
 }
 
-ul{
-    position: absolute;
-    list-style: none;
+
+nav{
     display: flex;
+    align-items: center;/*change to center*/
+    justify-content:space-between;
+   
 
-top:80px;
-   right:0px;
 }
-h1{
-    font-size: 50px;
-    max-width: 300px;
+nav a {
+    text-decoration: none;
+    color: var(--Verydarkblue);
+   font-size: 18px;
+margin-right: 10px;
 }
-.flex{
+nav a:hover {
+    color:var(--Softorange);
+}
+nav a:last-child(){
+    margin-right: 0px;
+}
+
+
+
+/* edit for section --start */
+
+
+.mobile{
+    display: none;
+}/*hidden the mobile img*/
+
+.section1{
     display: grid;
-    column-gap: 50px;
-    grid-template-columns: auto auto ;
+    grid-gap:50px ;/*btwn sec1 and sec2*/
+
 }
-.flex2{
+.first{
+    display:grid;
+     grid-gap:20px; /*gap btwn new and the img*/
+     grid-template-areas: 
+     "images images images new"
+     "images images images new"
+     "writee  writer  writer  new"
+     ;
+}
+.images{
+   grid-area:images; 
+}
+.writer{
+    grid-area: writer;
+    display: flex;
     
-    column-gap: 20px;
-    max-width: 497px;
-    position: absolute;
-    top:90%;
+
 }
+.writer h1{
+flex: 1;
+font-weight: 900;
+color: var(--Verydarkblue);
+margin-right: 50px;
+}
+.writer .descreption{
+flex: 1;
+font-size: 15px;
+color: var(--Grayishblue);
+
+}
+.new{
+    grid-area: new;
+    background-color: var(--Verydarkblue);
+    color: aliceblue;
+    padding:30px;
+  
+}
+.new h2{
+    color:var(--Softorange);
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.new h3{
+    color:var(--Off-white);
+    margin: 20px 0px;
+}
+.new h3:hover{
+    color: var(--Softorange);
+}
+.new .Card{
+    color:var();
+
+    border-bottom: 1px solid var(--Grayishblue);
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+}
+.new .Card:last-child{
+    border:none;
+}
+.new .Card p{
+    color:var(--Grayishblue)
+}
+.desk{
+  width:100%;/*deppend on the container */  
+}
+
+button{
+    margin-top: 15px;
+    border: none;
+    background-color: var(--Softred);
+    padding:10px;
+    width:150px;
+    color: var(--Off-white);
+    text-transform: capitalize;
+    font-weight: 800;
+
+}
+button:hover{
+    background-color: var(--Verydarkblue);
+    cursor: pointer;
+}
+
+
+
+
+
