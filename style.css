@@ -56,7 +56,7 @@ nav a:last-child(){
 .section1{
     display: grid;
     grid-gap:50px ;/*btwn sec1 and sec2*/
-
+    margin-top:50px;
 }
 .first{
     display:grid;
@@ -64,7 +64,7 @@ nav a:last-child(){
      grid-template-areas: 
      "images images images new"
      "images images images new"
-     "writee  writer  writer  new"
+     "writee writer writer  new"
      ;
 }
 .images{
@@ -80,12 +80,21 @@ nav a:last-child(){
 flex: 1;
 font-weight: 900;
 color: var(--Verydarkblue);
-margin-right: 50px;
+margin-right: 80px;
+
+/*white-space: nowrap;*/
+
+
+
+
+
+
 }
 .writer .descreption{
 flex: 1;
 font-size: 15px;
 color: var(--Grayishblue);
+
 
 }
 .new{
@@ -139,6 +148,24 @@ button{
 button:hover{
     background-color: var(--Verydarkblue);
     cursor: pointer;
+}
+
+/* EDIT SECTION TWO */
+.second{
+    display:flex;
+}
+.second img{
+    width:100px;
+    height: auto;
+    float: left; /* Float the image to the left */
+    margin-right: 10px
+}
+
+
+
+.second.card2{
+    display:flex;
+    
 }
 
 
