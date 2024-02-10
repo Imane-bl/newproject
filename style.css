@@ -110,9 +110,11 @@ color: var(--Grayishblue);
     margin-bottom: 20px;
 
 }
-.new h3{
+.new  h3{
     color:var(--Off-white);
-    margin: 20px 0px;
+
+    margin-bottom: 7px;
+    font-size: 15px;
 }
 .new h3:hover{
     color: var(--Softorange);
@@ -153,20 +155,61 @@ button:hover{
 /* EDIT SECTION TWO */
 .second{
     display:flex;
+    margin-bottom: 20px;
 }
+
 .second img{
     width:100px;
-    height: auto;
+    height: 120px;
     float: left; /* Float the image to the left */
-    margin-right: 10px
+    margin-right: 20px
+}
+.second .card1{
+    float:right;
+    margin-right: 10px;
+    padding:0px 10px;
+    line-height: 1.3rem;
+    right:20px;
+
+
+}
+.second span{
+    color:gray;
+    opacity:0.6;
+    font-size: 25px;
+    font-weight: bold;  
+}
+.second p{
+    color:var(--Grayishblue);
+
 }
 
 
 
-.second.card2{
-    display:flex;
-    
+.icon{
+    display:none;
+   
 }
+.back{
+    display: none;
+}
+
+
+/*responsive for mobile */
+@media screen  and (max-width:376px){
+    .container{
+  overflow: hidden;
+  padding:30px 20px;
+    }
+    nav .list{
+        position: fixed;
+    }
+}
+
+
+
+
+
 
 
 
