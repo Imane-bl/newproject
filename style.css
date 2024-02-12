@@ -200,7 +200,9 @@ button:hover{
     .container{
   overflow: hidden;
   padding:30px 20px;
-  height:10000px;
+  margin:auto 20px;
+
+  height:auto;
     }
     nav .list{
         position: fixed;
@@ -266,6 +268,7 @@ transition: all 650ms ease-in-out;
     display:block;
 }
 .first{
+    margin-right:10px;
     grid-template-areas: 
 "images"
 "writer"
@@ -273,6 +276,8 @@ transition: all 650ms ease-in-out;
 }
 .mobile{
     display:block;
+    width:330px;
+   
 }
 .desk{
     display: none;
@@ -280,9 +285,37 @@ transition: all 650ms ease-in-out;
 .second{
    flex-direction: column;
 }
+.second .card1 {
+    flex-direction: column;
+ 
+    line-height: 1.8rem;
+    margin-top:20px;
+}
+.second .right-side{
+    max-width:310px;
+}
+
 
 
 }
+
+@media screen  and (max-width:767px){
+    .container{
+        padding:10px;
+        margin:10px;
+      
+    }}
+
+
+
+@media screen and (max-width:562px){
+    .first{
+        grid-template-areas: 
+        "images "
+        "writer"
+        "new";
+       
+        }}
 
 
 
